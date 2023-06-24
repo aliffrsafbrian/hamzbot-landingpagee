@@ -1,0 +1,49 @@
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url(SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+html,
+body{
+    min-width: 100vh;
+    min-height: 100vh;
+    background-image: url('./img/Vector.svg');
+    font-family: 'Space Grotesk', sans-serif;
+    background-repeat: repeat;
+}
+
+@media screen and (max-width: 640px) {
+    .textBox::before{
+        content: none;
+        display: none;
+    }
+
+    .textBox::after{
+        content: none;
+        display: none;
+    }
+}
+
+.textBox::before{
+    content: '';
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #8B7BCF;
+    backdrop-filter: blur(12px);
+}
+
+.textBox::after{
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.0);
+    backdrop-filter: blur(10px);
+}
