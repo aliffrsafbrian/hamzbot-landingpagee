@@ -6,8 +6,6 @@
 
 html,
 body{
-    min-width: 100vh;
-    min-height: 100vh;
     background-image: url('./img/Vector.svg');
     font-family: 'Space Grotesk', sans-serif;
     background-repeat: repeat;
