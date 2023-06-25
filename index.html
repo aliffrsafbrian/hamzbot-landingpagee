@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hambots Landing Page</title>
 
     <!-- css -->
     <link rel="stylesheet" href="./src/style.css">
@@ -14,14 +14,18 @@
 
     <!-- favicon -->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    <!-- ANimation e cok -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
-<body class="bg-[#0F0F0F] font-medium text-white">
+<body class="bg-slate-950 font-medium text-white">
 
     <!-- hero section -->
-    <section class="py-32 flex justify-center max-sm:justify-start max-sm:mx-12">
+    <section class="py-32 flex justify-between items-center px-36 max-sm:justify-start max-sm:px-12 max-sm:flex-col">
         <div class="textBox">
-            <h1 class="font-bold text-8xl max-sm:text-6xl">Hamzbots <br> Present</h1>
-            <p class="w-2/3 my-4 leading-relaxed text-lg max-sm:text-base max-sm:w-[60%]">Create a multifunctional bot with all freedom without restrictions --</p>
+            <h1 class="w-1/2 font-bold text-8xl max-sm:text-6xl">Hambots Present</h1>
+            <p class="w-2/3 my-4 leading-relaxed text-lg max-sm:text-base max-sm:w-[70%]">Create a multifunctional bot with all freedom without restrictions --</p>
 
             <div class="btn flex gap-24 max-sm:flex-col max-sm:gap-1">
                 <div class="group flex gap-4 items-center max-sm:mt-4">
@@ -34,33 +38,39 @@
                 </div>
             </div>
         </div>
+        <div class="anim">
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_dlw10cqe.json"  background="transparent"  speed="1"  style="width: 360px; height: 360px;" loop autoplay></lottie-player>
+        </div>
     </section>
 
     <!-- Box section -->
     <section>
-        <div class="container px-36 pb-24 max-sm:px-12">
+        <div class="container px-36 pb-24 max-sm:px-12 max-sm:text-center">
             <div class="textBox my-8">
                 <h1 class="text-2xl font-semibold">Feature</h1>
             </div>
 
             <div class="box--wrap flex gap-4 max-sm:flex-wrap">
-                <div class="box py-8 px-10 border border-transparent rounded-xl transition hover:bg-white/10 hover:border-white/20 hover:rounded-xl">
-                    <div class="textBox">
-                        <h1 class="text-2xl font-semibold my-2">Fast</h1>
+                <div class="group box py-8 px-10 border border-transparent rounded-xl transition hover:bg-slate-600/30 hover:border-white/20 hover:rounded-xl max-sm:w-full">
+                    <div class="textBox max-sm:text-center">
+                        <i class="fi fi-sr-tachometer-fast text-3xl pt-4 px-4 pb-2 items-center bg-slate-900/70 rounded-xl group-hover:bg-slate-900"></i>
+                        <h1 class="text-2xl font-semibold mt-6 mb-2">Fast</h1>
                         <p>Secepat balasan doi ketika kasmaran</p>
                     </div>
                 </div>
 
-                <div class="box py-8 px-10 border border-transparent rounded-xl transition hover:bg-white/10 hover:border-white/20 hover:rounded-xl">
-                    <div class="textBox">
-                        <h1 class="text-2xl font-semibold my-2">Storage Besar</h1>
+                <div class="group box py-8 px-10 border border-transparent rounded-xl transition hover:bg-slate-600/30 hover:border-white/20 hover:rounded-xl max-sm:w-full">
+                    <div class="textBox max-sm:text-center">
+                        <i class="fi fi-sr-database text-3xl pt-4 px-4 pb-2 items-center bg-slate-900/70 rounded-xl group-hover:bg-slate-900"></i>
+                        <h1 class="text-2xl font-semibold mt-6 mb-2">Storage Besar</h1>
                         <p>Jangan buat download b*kp ya adick adick</p>
                     </div>
                 </div>
 
-                <div class="box py-8 px-10 border border-transparent rounded-xl transition hover:bg-white/10 hover:border-white/20 hover:rounded-xl">
-                    <div class="textBox">
-                        <h1 class="text-2xl font-semibold my-2">Banyak Fitur</h1>
+                <div class="group box py-8 px-10 border border-transparent rounded-xl transition hover:bg-slate-600/30 hover:border-white/20 hover:rounded-xl max-sm:w-full">
+                    <div class="textBox max-sm:text-center">
+                        <i class="fi fi-sr-physics text-3xl pt-4 px-4 pb-2 items-center bg-slate-900/70 rounded-xl group-hover:bg-slate-900"></i>
+                        <h1 class="text-2xl font-semibold mt-6 mb-2">Banyak Fitur</h1>
                         <p>Lebih dari 50++ fitur bot yg berguna</p>
                     </div>
                 </div>
@@ -70,8 +80,13 @@
 
     <!-- Foter -->
     <footer>
-        <div class="text-center py-12 max-sm:text-left max-sm:px-12">
-            <p class="text-white/70">Dibuat dengan ♥  <a href="https://www.instagram.com/aliffrsafbrian" class="text-white/40"> oleh @aliffrsfbrian</a></p>
+        <div class="text-center pt-20 pb-8">
+            <p class="text-white/70">Bot dibuat dengan ♥ <a href="https://www.instagram.com/_dlwrml" class="text-white/40">oleh @_dlwrml</a></p>
+            <p class="text-white/70">Website dibuat dengan ♥ <a href="https://www.instagram.com/aliffrsafbrian" class="text-white/40"> oleh @aliffrsfbrian</a></p>
+
+            <div class="h-[1px] mx-8 my-12 bg-white/60">
+                <p class="text-center py-6 text-sm text-white/40">@2023 All Right Reserved -- Hambots</p>
+            </div>
         </div>
     </footer>
 </body>
